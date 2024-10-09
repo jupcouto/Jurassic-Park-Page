@@ -1,0 +1,93 @@
+body{
+    padding: 0 2em;
+}
+
+
+header{
+    background-color: brown;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+    
+}
+
+header img {
+    height: 100px;
+    padding: 15px; 
+}
+
+header a {
+    color: aliceblue;
+    text-decoration: none; /* Remove sublinhado */
+    
+
+}
+
+.img-red, .img-yellow{
+    border-radius: 3px;
+    margin: 2em;
+}
+
+.img-yellow {
+    border: 5px solid rgb(209, 206, 11); 
+}
+
+.img-red {
+    border: 5px solid rgb(211, 27, 27); 
+}
+
+
+body{
+    background-color:rgb(24, 37, 21) ;
+}
+
+.section-grey, .section-white{
+    padding: 35px;
+    text-align: justify;
+
+    display: flex;
+}
+
+.section-white {
+    background-color: rgb(255, 255, 255);
+}
+
+.section-grey {
+    background-color: rgb(73, 73, 73);
+    color: aliceblue;
+}
+
+h1 {
+    background-color: rgb(104, 0, 0);
+    color: aliceblue;
+    text-align: center;
+    padding: 40px;
+    margin: 0;
+}
+
+#h2 {
+    text-align: center;
+}
+
+
+footer  {
+    background-color: rgb(104, 0, 0);
+    color: aliceblue;
+    text-align: center;
+    padding: 20;
+}
+
+
+table {
+    width: 40%; 
+    margin: 40px;
+
+}
+
+th {
+    background-color: #353232;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border: 0.6px solid #222222;
+}
+
