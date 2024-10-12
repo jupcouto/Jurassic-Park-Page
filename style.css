@@ -1,28 +1,42 @@
 body{
     padding: 0 2em;
+    background-color: #123123;
+
 }
 
 
 header{
-    background-color: brown;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: larger;
+    background-image: url("jp_topoFundo.jpg");
     
 }
 
-header img {
-    height: 100px;
+header img {  
+    height: 150px;
     padding: 15px; 
 }
 
 header a {
     color: aliceblue;
     text-decoration: none; /* Remove sublinhado */
-    
-
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
 }
 
-.img-red, .img-yellow{
+.containerMenu {
+    width: 500px;
+    height: 40px;
+    background-image: url("jp_menuFundo.jpg");
+    position: relative;
+    top: -80px;
+    left: 395px;
+    border: 2px solid #ffff;
+    border-radius: 20px 0px 20px 0px;
+    text-align: center;
+}
+
+.img-red, .img-yellow {
     border-radius: 3px;
     margin: 2em;
 }
@@ -36,13 +50,10 @@ header a {
 }
 
 
-body{
-    background-color:rgb(24, 37, 21) ;
-}
-
 .section-grey, .section-white{
     padding: 35px;
     text-align: justify;
+
 
     display: flex;
 }
@@ -55,6 +66,7 @@ body{
     background-color: rgb(73, 73, 73);
     color: aliceblue;
 }
+
 
 h1 {
     background-color: rgb(104, 0, 0);
