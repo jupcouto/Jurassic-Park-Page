@@ -53,13 +53,12 @@ header a {
 .section-grey, .section-white{
     padding: 35px;
     text-align: justify;
-
-
     display: flex;
 }
 
 .section-white {
     background-color: rgb(255, 255, 255);
+
 }
 
 .section-grey {
@@ -85,21 +84,52 @@ footer  {
     background-color: rgb(104, 0, 0);
     color: aliceblue;
     text-align: center;
-    padding: 20;
+    padding: 35px;
+    margin: 0 auto;
+    color: white;
+    background-image: url(jp_topoFundo.jpg);
+    font-size: 16px;
 }
 
 
-table {
-    width: 40%; 
-    margin: 40px;
-
-}
-
-th {
-    background-color: #353232;
-    color: #fff;
-    padding: 10px;
+.tabela {
+    padding: 35px;
+    background-image: url(jp_fundoSelva.jpg);
+    margin: 0%;
     text-align: center;
-    border: 0.6px solid #222222;
+    background-attachment: fixed;
 }
 
+.tituloPremios {
+    position: relative;
+    top: -9px;
+    margin: 0 auto;
+    color: white;
+}
+
+.tabelaPremios {
+    position: relative;
+    top: -8px;
+    margin: 0 auto;
+    width: 400px;
+    height: 200px;
+}
+
+.thPremios {
+    background-color: #333333;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.tr-grey , .tr-yellow {
+    text-align: center;
+}
+
+.tr-grey {
+    background-color: #999999;
+}
+
+.tr-yellow {
+    background-color: #dddd00;
+}
