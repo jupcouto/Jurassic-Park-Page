@@ -1,3 +1,4 @@
+
 body{
     padding: 0 2em;
     background-color: #123123;
@@ -132,4 +133,88 @@ footer  {
 
 .tr-yellow {
     background-color: #dddd00;
+}
+
+/* Corpo da página */
+body {
+    padding: 0 2em;
+    background-color: #123123;
+}
+
+/* Header */
+header {
+    background-image: url("jp_topoFundo.jpg");
+}
+header img {  
+    height: 150px;
+    padding: 15px; 
+}
+header a {
+    color: aliceblue;
+    text-decoration: none; /* Remove sublinhado */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+}
+.containerMenu {
+    width: 500px;
+    height: 40px;
+    background-image: url("jp_menuFundo.jpg");
+    position: relative;
+    top: -95px;
+    left: 395px;
+    border: 2px solid #ffff;
+    border-radius: 20px 0px 20px 0px;
+    text-align: center;
+}
+
+
+
+form {
+    margin: 20px auto; 
+    width: 100%;
+    max-width: 500px; 
+    padding: 10px 0; 
+    color: white; 
+    font-family: Arial, sans-serif; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    border-radius: 10px;
+    text-align: center; 
+}
+
+
+form input[type="text"] {
+    display: block;
+    width: 100%; 
+    max-width: 400px; 
+    margin: 10px auto; 
+    padding: 10px;
+    border: none; 
+    border-bottom: 2px solid #fff; 
+    background: transparent; 
+    color: white; 
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    margin-top: 15px; 
+    padding: 10px 20px; 
+    background-color: rgb(104, 0, 0);
+    color: white; 
+    font-size: 18px;
+    border: none; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+    width: auto;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+
+form input[type="submit"]:hover {
+    background-color: rgb(2, 1, 1); 
 }
