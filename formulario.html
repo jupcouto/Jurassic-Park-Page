@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>NOME DO DINOSSAURO</title>
+    </head>
+    <body>
+        <h1>CRIADOR DE NOME DE DINOSSAURO</h1>
+
+        <script> //rodar javascript na página html
+            function Formulario() {   //criar função pra executar as condições no código
+                const primeirasilaba = document.forms["dinossauro"].primeirasilaba.value; //
+                if (primeirasilaba == "") {
+                    alert("Você precisa preencher este campo."); //EMITIR ALERTA NA TELA
+                    event.preventDefault(); //// impede o envio do formulário
+                    return;
+                }
+
+                const ultimasilaba = document.forms["dinossauro"].ultimasilaba.value;
+                if (ultimasilaba == "") {
+                    alert("Você precisa preencher este campo.");
+                    event.preventDefault();
+                    return;
+                }
+
+                const primeirasobrenome = document.forms["dinossauro"].primeirasobrenome.value;
+                if (primeirasobrenome == "") {
+                    alert("Você precisa preencher este campo.");
+                    event.preventDefault();
+                    return;
+                }
+
+                const ultimasobrenome = document.forms["dinossauro"].ultimasobrenome.value;
+                if (ultimasobrenome == "") {
+                    alert("Você precisa preencher este campo.");
+                    event.preventDefault();
+                    return;
+                }
+
+                const confirmar = confirm("Você deseja continuar?"); 
+                if (!confirmar) {
+                    alert("Operação cancelada.");
+                    return; // Cancela a operação
+                }
+                
+                // Somente continua se o usuário clicar em "OK"
+                document.write("Seu nome de dinossauro é: " + primeirasilaba + ultimasobrenome + primeirasobrenome + ultimasilaba + "sauro");
+ 
+            }
+
+        </script>
+
+
+
+        <!--method get pra enviar o formulário pra um servidor-->
+        <!--action destina qual é o servidor que será enviado-->
+        <!-- name é o nome do formulário-->
+        <form method="get" action="" name="dinossauro"> 
+            Informe a primeira sílaba do seu nome: <input type="text" name="primeirasilaba"> <br> <!--o type é pra definir um campo do tipo texto-->
+            Informe a última sílaba do seu nome: <input type="text" name="ultimasilaba"> <br> 
+            Informe a primeira sílaba do seu sobrenome: <input type="text" name="primeirasobrenome"> <br>
+            Informe a última sílaba do seu sobrenome: <input type="text" name="ultimasobrenome"> <br>
+
+            <input type="submit" onclick="Formulario()" value="Gerar meu nome de dinossauro" id="send">
+           <!-- onclick="Formulario() chama a função Formulario quando o botão é clicado
+            value="Gerar meu nome de dinossauro" define o texto que aparece no botão
+             o submit envia os dados de um formulário 
+            -->
+
+
+        </form>
+
+    </body>
+</html>
