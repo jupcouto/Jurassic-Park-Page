@@ -120,6 +120,74 @@
                 </section>
     
         </main>
+      
+
+        <script> //rodar javascript na página html
+            function Formulario() {   //criar função pra executar as condições no código
+                const primeirasilaba = document.forms["dinossauro"].primeirasilaba.value; //
+                if (primeirasilaba == "") {
+                    alert("Você precisa preencher este campo."); //EMITIR ALERTA NA TELA
+                    event.preventDefault(); //// impede o envio do formulário
+                    return;
+                }
+
+                const ultimasilaba = document.forms["dinossauro"].ultimasilaba.value;
+                if (ultimasilaba == "") {
+                    alert("Você precisa preencher este campo.");
+                    event.preventDefault();
+                    return;
+                }
+
+                const primeirasobrenome = document.forms["dinossauro"].primeirasobrenome.value;
+                if (primeirasobrenome == "") {
+                    alert("Você precisa preencher este campo.");
+                    event.preventDefault();
+                    return;
+                }
+
+                const ultimasobrenome = document.forms["dinossauro"].ultimasobrenome.value;
+                if (ultimasobrenome == "") {
+                    alert("Você precisa preencher este campo.");
+                    event.preventDefault();
+                    return;
+                }
+
+                const confirmar = confirm("Você deseja continuar?"); 
+                if (!confirmar) {
+                    alert("Operação cancelada.");
+                    return; // Cancela a operação
+                }
+                
+                // Somente continua se o usuário clicar em "OK"
+                document.write("Seu nome de dinossauro é: " + primeirasilaba + ultimasobrenome + primeirasobrenome + ultimasilaba + "sauro");
+ 
+            }
+
+        </script>
+
+        <h1>CRIADOR DE NOME DE DINOSSAURO</h1>
+
+        <!--method get pra enviar o formulário pra um servidor-->
+        <!--action destina qual é o servidor que será enviado-->
+        <!-- name é o nome do formulário-->
+
+        <form method="get" action="" name="dinossauro"> 
+            <label>Informe a primeira sílaba do seu nome:</label>
+            <input type="text" name="primeirasilaba"> <br> 
+    
+            <label>Informe a última sílaba do seu nome:</label>
+            <input type="text" name="ultimasilaba"> <br> 
+    
+            <label>Informe a primeira sílaba do seu sobrenome:</label>
+            <input type="text" name="primeirasobrenome"> <br> 
+    
+            <label>Informe a última sílaba do seu sobrenome:</label>
+            <input type="text" name="ultimasobrenome"> <br> 
+    
+            <div class="button-container">
+                <input type="submit" onclick="Formulario()" value="Gerar meu nome de dinossauro">
+            </div>
+        </form>
         <footer>
             JURASSIC PAGE - O seu canal de informações sobre Jurassic Park
         </footer>
